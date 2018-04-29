@@ -1,6 +1,6 @@
 
 import urllib, shutil, os
-from electrum_ltc import SimpleConfig
+from electrum_lcc import SimpleConfig
 
 
 if __name__ == "__main__":
@@ -8,7 +8,7 @@ if __name__ == "__main__":
     config= SimpleConfig()
     rdir = config.get('requests_dir')
     if not rdir:
-        print("requests_dir not found in Electrum-LTC configuration")
+        print("requests_dir not found in Electrum-LCC configuration")
         exit(1)
     if not os.path.exists(rdir):
         os.mkdir(rdir)
